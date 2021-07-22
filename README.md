@@ -1,6 +1,6 @@
 ## Bóc tách âm tiết và trình bày dưới dạng Ascii
 
-Xem kết quả [`stats\08-telexified_sample.txt`](https://github.com/telexyz/news_corpus/blob/master/stats/08-telexified_sample.txt)
+Xem kết quả [`stats\08-telexified_sample.txt`](https://github.com/telexyz/results/blob/master/stats/08-telexified_sample.txt)
 
 ### Thuật ngữ
 
