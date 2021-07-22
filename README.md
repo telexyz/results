@@ -34,30 +34,36 @@ Phân tách `alphabet` tokens thành loại có dấu hoặc có thanh điệu (
 
 ### Trình bày lại dưới dạng Ascii
 
-Các từ không phải âm tiết tiếng Việt đánh dấu bằng `#` (khác)
+#### Các từ không phải âm tiết tiếng Việt có 2 lựa chọn:
 
-Với các âm tiết tiếng Việt 
+##### 1/ Loại bỏ và tách các cụm âm tiết tiếng Việt liền nhau theo dòng
+`./bin/telexifiy input.txt output.xyz`
+
+##### 2/ Giữ lại nguyên bản
+`./bin/telexifiy input.txt output.xyz keep`
+
+#### Với các âm tiết tiếng Việt 
 ```js
 * Nước => ^nuoc|ws
 * VIỆT => ^^viet|zj
 * đầy  => dday|zf
 ```
-#### 1/ Dùng `^` đánh dấu âm tiết viết hoa chữ cái đầu, `^^` viết hoa toàn bộ
+##### 1/ Dùng `^` đánh dấu âm tiết viết hoa chữ cái đầu, `^^` viết hoa toàn bộ
 Note: bỏ qua trường hợp viết cả thường lẫn hoa như `MóNg`
 
-#### 2/ Chuyển phần dấu nguyên âm và thanh về cuối âm tiết:
+##### 2/ Chuyển phần dấu nguyên âm và thanh về cuối âm tiết:
 
-##### 2.1/ Phần dấu
+###### 2.1/ Phần dấu
 * `w` cho cách bỏ dấu `ă,ư,ơ,ươ,ưa`
 
 * `z` cho cách bỏ dấu `â,ê,ô,uô,iê,yê`
 
-##### 2.2/ Phần thanh điệu
+###### 2.2/ Phần thanh điệu
 * `s|f|r|x|j` cho các thanh sắc, huyền, hỏi, ngã, nặng
 
 Cách trình bày lại này linh động ở chỗ giữ nguyên dạng cách viết không dấu không thanh, bóc tách thuộc tính viết hoa thành tiền tố `^`, bóc tách phần dấu và thanh điệu, là bổ xung cho cách viết không dấu, thành hậu tố `|[wz][sfrxj]`. 
 
-**ƯU ĐIỂM (vô cùng nhiều)**
+#### ƯU ĐIỂM
 
 Nói về ưu điểm dưới góc nhìn của việc xử lý và lưu trữ dữ liệu (a.k.a góc nhìn máy tính)
 
@@ -80,7 +86,6 @@ Nhìn từ góc độ này thì việc làm lỏng luật hơn để việc gõ 
 
 Mình đi ngược lại trào lưu này vì cho rằng nhiều luật chỉ tổ khó nhớ, dễ lẫn và làm khó cho người lập trình cũng như máy tính. Mình gõ tiếng Việt pha lẫn tiếng Anh nhiều nên sau một thời gian thử đã tắt hết các luật mở rộng để hạn chế nhầm lẫn.
 
-
 3. Phần hậu tố này có thể làm nhãn (tag) để huấn luyện máy học cách tự động bỏ dấu ...
 
 4. Khi tách âm tiết bất kỳ thành `tiền tố + âm tiết không dấu viết thường + hậu tố`: `^^ + viet + |zj` (gửi thông tin vào ngữ cảnh) sẽ làm giảm bộ từ vựng (vocab) chỉ còn còn khoảng hơn 4000. Lợi cho việc huấn luyện với tập dữ liệu nhỏ hoặc tài nguyên hạn chế.
@@ -90,7 +95,7 @@ Mình đi ngược lại trào lưu này vì cho rằng nhiều luật chỉ t�
 6. Tính toán độ giống nhau (similarity) để chữa lỗi chính tả do gõ bàn phím cũng dễ hơn vì lỗi dễ nắm bắt nhất là ở ngay lúc gõ phím chứ không phải ở bản thân ký tự (ascii hay utf-8). Đây là một lợi điểm nữa của `2. Gõ sao (cố gắng) lưu vậy` bằng việc dùng ascii để trình bày thay vì utf-8 vì ascii gần bàn phím (key-stroke) hơn utf-8.
 
 
-**YẾU ĐIỂM**
+#### YẾU ĐIỂM
 
 Với người dùng: đó là khó đọc hơn utf-8, tuy đã dễ đọc hơn một chút so với kiểu ascii-telex `muoi|wf vs muwowif`
 
