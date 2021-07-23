@@ -22,3 +22,8 @@
 # Tương tác sâu vơi với python binding
 # pip3 install https://github.com/kpu/kenlm/archive/master.zip
 python3 query.py
+
+# KenLM tập trung scoring nhanh trên tập dữ liệu lớn (not fit ram)
+# Để làm các tác vụ khác như predict next word, LM cho speech-to-text
+# Cần viết bộ decoder riêng:
+# https://github.com/kpu/kenlm#decoder-developers
