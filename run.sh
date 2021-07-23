@@ -44,8 +44,19 @@ python3 query.py
 # -0.001879 4: thuc|wj pham|zr chuc|ws nang|w
 # -0.513599 5: thuc|wj pham|zr chuc|ws nang|w </s>
 
-# KenLM tập trung scoring nhanh trên tập dữ liệu lớn (not fit ram)
-# Để làm các tác vụ khác như predict next word, LM cho speech-to-text
-# Cần viết bộ decoder riêng:
-# https://github.com/kpu/kenlm#decoder-developers
-# https://stackoverflow.com/questions/43841467/how-to-compute-perplexity-using-kenlm
+# - - - - - - - - - - - - - - - - - - - - - - - - 
+# KenLM tập trung train & score nhanh trên tập dữ liệu lớn (not fit ram). 
+# Để làm các tác vụ khác như predict next word cần viết bộ decoder riêng
+# Example https://github.com/jp-myk/lm-decoder
+
+git clone https://github.com/telexyz/lm-decoder.git
+# brew install automake # autoconfig libtool
+cd lm-decoder
+make
+make lmdecoder
+./bin/lmdecoder
+echo "平城京は奈良時代" | ./bin/lmdecoder sample_data/sample.dic sample_data/sample.5gram.arpa
+# ======== N-BEST =========
+# 1-best	平城京:ヘイジョウキョウ は:ハ 奈良:ナラ 時代:ジダイ	-9.3222
+# 2-best	平城:ヒラジロ 京:ミヤコ は:ハ 奈良:ナラ 時代:ジダイ	-11.7875
+# 3-best	平城:ヒラジロ 京:キョウ は:ハ 奈良:ナラ 時代:ジダイ	-13.2098
