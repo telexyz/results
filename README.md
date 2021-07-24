@@ -88,7 +88,7 @@ Nói về ưu điểm dưới góc nhìn của việc xử lý và lưu trữ d�
 
 3. Phần hậu tố này có thể làm nhãn (tag) để huấn luyện máy học cách tự động bỏ dấu ...
 
-4. Khi tách âm tiết bất kỳ thành `tiền tố + âm tiết không dấu viết thường + hậu tố`: `^^ + viet + |zj` (gửi thông tin vào ngữ cảnh) sẽ làm giảm bộ từ vựng (vocab) chỉ còn còn khoảng 2000. Lợi cho việc huấn luyện với tập dữ liệu nhỏ hoặc tài nguyên hạn chế.
+4. Khi tách âm tiết bất kỳ thành `tiền tố + âm tiết không dấu viết thường + hậu tố`: `^^ + viet + |zj` (gửi thông tin vào ngữ cảnh) sẽ làm giảm bộ từ vựng (vocab) chỉ còn còn khoảng < 3000 (xem file `az_syll0m0ts.txt`). Lợi cho việc huấn luyện với tập dữ liệu nhỏ hoặc tài nguyên hạn chế.
 
 5. Việc sắp xếp cũng đơn giản hơn, ko có chuyện a, ă, â đứng cách xa nhau hàng km. 
 
