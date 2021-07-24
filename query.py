@@ -3,16 +3,18 @@
 import os
 import kenlm
 
-model = kenlm.LanguageModel('news_titles.xyz.binary')
+# model = kenlm.LanguageModel('news_titles.dense.binary')
+model = kenlm.LanguageModel('news_titles.spare.binary')
 print('\n{0}-gram model'.format(model.order))
 
-print("\nSent:\n")
-sentence = '^nhieu|zf he|zj luy|j khon|z luong|wf tu|wf viec|zj lam|f gia|r thuc|wj pham|zr chuc|ws nang|w'
-print(sentence)
+# sentence = '^nhieu|zf he|zj luy|j khon|z luong|wf tu|wf viec|zj lam|f gia|r thuc|wj pham|zr chuc|ws nang|w'
+sentence = 'nhieu zf he zj luy j khon z luong wf tu wf viec zj lam f gia r thuc wj pham zr chuc ws nang w'
+# sentence = 'nhieu he luy khon luong tu viec lam gia thuc pham chuc nang'
+print("\nSent:", sentence)
 print('Score', model.score(sentence))
 print('Perplexity', model.perplexity(sentence))
 
-print("\nWords:\n")
+print("\nWords:")
 
 # Check that total full score = direct score
 def score(s):
