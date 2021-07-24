@@ -1,13 +1,10 @@
 # Source https://github.com/kpu/kenlm/blob/master/python/example.py
-
 import os
 import kenlm
 
-# model = kenlm.LanguageModel('news_titles.dense.binary')
 model = kenlm.LanguageModel('news_titles.spare.binary')
 print('\n{0}-gram model'.format(model.order))
 
-# sentence = '^nhieu|zf he|zj luy|j khon|z luong|wf tu|wf viec|zj lam|f gia|r thuc|wj pham|zr chuc|ws nang|w'
 sentence = '^ nhieu zf he zj luy j khon z luong wf tu wf viec zj lam f gia r thuc wj pham zr chuc ws nang w'
 # sentence = 'nhieu he luy khon luong tu viec lam gia thuc pham chuc nang'
 print("\nSent:", sentence)
