@@ -5,7 +5,7 @@
 # Hoặc giải nén file news_titles.aa.7z
 
 # Tách cụm âm tiết tiếng Việt theo dòng
-./bin/telexify news_titles.aa news_titles.aa.xyz
+./bin/telexify news_titles.aa news_titles.aa.xyz spare
 
 # - - - - - - - - - - - - - - - - - - - - - - - - 
 # Thử N-gram với https://kheafield.com/code/kenlm
