@@ -28,38 +28,39 @@
 python3 query.py
 
 # [ spare mode, 11-gram ]
-# Sent: nhieu zf he zj luy j khon z luong wf tu wf viec zj lam f gia r thuc wj pham zr chuc ws nang w
-# Score -19.410377502441406
-# Perplexity 5.2348334695046805
+# Sent: ^ nhieu zf he zj luy j khon z luong wf tu wf viec zj lam f gia r thuc wj pham zr chuc ws nang w
+# Score -19.449417114257812
+# Perplexity 4.950191952427405
 # 
 # Words:
-# -2.380128 2: <s> nhieu
-# -0.001977 3: <s> nhieu zf
-# -2.904650 4: <s> nhieu zf he
-# -0.001077 5: <s> nhieu zf he zj
-# -0.050265 6: <s> nhieu zf he zj luy
-# -0.000010 7: <s> nhieu zf he zj luy j
-# -2.459867 5: he zj luy j khon
-# -0.027670 6: he zj luy j khon z
-# -0.114489 7: he zj luy j khon z luong
-# -0.000905 8: he zj luy j khon z luong wf
-# -0.720739 9: he zj luy j khon z luong wf tu
-# -0.003571 10: he zj luy j khon z luong wf tu wf
-# -1.385607 8: j khon z luong wf tu wf viec
+# -0.233295 2: <s> ^
+# -2.243072 3: <s> ^ nhieu
+# -0.001996 4: <s> ^ nhieu zf
+# -2.895364 5: <s> ^ nhieu zf he
+# -0.001064 6: <s> ^ nhieu zf he zj
+# -0.060517 7: <s> ^ nhieu zf he zj luy
+# -0.000008 8: <s> ^ nhieu zf he zj luy j
+# -2.423051 5: he zj luy j khon
+# -0.023709 6: he zj luy j khon z
+# -0.097924 7: he zj luy j khon z luong
+# -0.000708 8: he zj luy j khon z luong wf
+# -0.750089 9: he zj luy j khon z luong wf tu
+# -0.003269 10: he zj luy j khon z luong wf tu wf
+# -1.373894 8: j khon z luong wf tu wf viec
 # -0.000000 9: j khon z luong wf tu wf viec zj
-# -1.376817 6: wf tu wf viec zj lam
-# -0.074066 6: tu wf viec zj lam f
-# -2.103573 5: viec zj lam f gia
-# -0.347514 6: viec zj lam f gia r
-# -3.338781 4: f gia r thuc
-# -0.085959 5: f gia r thuc wj
-# -0.354979 6: f gia r thuc wj pham
-# -0.000357 7: f gia r thuc wj pham zr
-# -1.248137 6: r thuc wj pham zr chuc
-# -0.000852 7: r thuc wj pham zr chuc ws
-# -0.001632 8: r thuc wj pham zr chuc ws nang
-# -0.000025 9: r thuc wj pham zr chuc ws nang w
-# -0.426734 10: r thuc wj pham zr chuc ws nang w </s>
+# -1.359969 6: wf tu wf viec zj lam
+# -0.069881 6: tu wf viec zj lam f
+# -2.119208 5: viec zj lam f gia
+# -0.346954 6: viec zj lam f gia r
+# -3.352437 4: f gia r thuc
+# -0.084069 5: f gia r thuc wj
+# -0.355494 6: f gia r thuc wj pham
+# -0.000283 7: f gia r thuc wj pham zr
+# -1.228442 6: r thuc wj pham zr chuc
+# -0.000803 7: r thuc wj pham zr chuc ws
+# -0.001524 8: r thuc wj pham zr chuc ws nang
+# -0.000022 9: r thuc wj pham zr chuc ws nang w
+# -0.422367 10: r thuc wj pham zr chuc ws nang w </s>
 
 # [ dense mode, 06-gram ]
 # Sent: ^nhieu|zf he|zj luy|j khon|z luong|wf tu|wf viec|zj lam|f gia|r thuc|wj pham|zr chuc|ws nang|w
