@@ -32,7 +32,7 @@ python3 query.py
 # Score -19.449417114257812
 # Perplexity 4.950191952427405
 # 
-# Words:
+# Tokens:
 # -0.233295 2: <s> ^
 # -2.243072 3: <s> ^ nhieu
 # -0.001996 4: <s> ^ nhieu zf
@@ -67,7 +67,7 @@ python3 query.py
 # Score -20.317848205566406
 # Perplexity 28.266684519165167
 # 
-# Words:
+# Tokens:
 # -2.442754 2: <s> ^nhieu|zf
 # -2.900222 3: <s> ^nhieu|zf he|zj
 # -0.097574 4: <s> ^nhieu|zf he|zj luy|j

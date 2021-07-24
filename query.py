@@ -14,7 +14,7 @@ print("\nSent:", sentence)
 print('Score', model.score(sentence))
 print('Perplexity', model.perplexity(sentence))
 
-print("\nWords:")
+print("\nTokens:")
 
 # Check that total full score = direct score
 def score(s):
