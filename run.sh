@@ -1,22 +1,21 @@
 #!/bin/sh
 
-# Tách riêng 6 triệu titles đầu tiên từ file gốc
-# split -l6000000 ../data/news_titles.txt news_titles.
-# Hoặc giải nén file news_titles.aa.7z
-
+# Chuẩn bị dữ liệu
+7z x news_titles.aa.7z
+7z x news_titles.ab.7z
+cat news_titles.aa news_titles.bb > news_titles.txt
+# - - - - - - - - - - - - - - - - - - - - - - - - 
 # Tách cụm âm tiết tiếng Việt theo dòng
-# ./bin/telexify news_titles.aa news_titles.dense.xyz dense
-
+# mkdir -p data && ./bin/telexify news_titles.aa news_titles.dense.xyz dense
 # - - - - - - - - - - - - - - - - - - - - - - - - 
 # Thử N-gram với https://kheafield.com/code/kenlm
-
 # ./bin/lmplz -o 6 --prune 3 --text news_titles.dense.xyz --arpa news_titles.dense.arpa
 # ./bin/build_binary -p 1.5 probing news_titles.dense.arpa news_titles.dense.binary 
-
+# - - - - - - - - - - - - - - - - - - - - - - - - 
 # Test với 1 câu từ tập news_titles.ab
 # "Nhiều hệ lụy khôn lường từ việc làm giả thực phẩm chức năng."
 # ./bin/query -v summary -v sentence -v word news_titles.dense.binary <query.dense.txt
-
+# - - - - - - - - - - - - - - - - - - - - - - - - 
 # Tương tác sâu hơn với python binding, max_order=11
 # pip3 install https://github.com/telexyz/kenlm/archive/master.zip
 # python3 query.py
