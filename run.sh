@@ -2,8 +2,8 @@
 
 # Chuẩn bị dữ liệu
 7z x news_titles.aa.7z
-7z x news_titles.ab.7z
-cat news_titles.aa news_titles.bb > news_titles.txt
+# 7z x news_titles.ab.7z
+# cat news_titles.aa news_titles.bb > news_titles.txt
 # - - - - - - - - - - - - - - - - - - - - - - - - 
 # Tách cụm âm tiết tiếng Việt theo dòng
 # mkdir -p data && ./bin/telexify news_titles.aa news_titles.dense.xyz dense
@@ -102,3 +102,30 @@ python3 query.spare.py
 # 1-best	平城京:ヘイジョウキョウ は:ハ 奈良:ナラ 時代:ジダイ	-9.3222
 # 2-best	平城:ヒラジロ 京:ミヤコ は:ハ 奈良:ナラ 時代:ジダイ	-11.7875
 # 3-best	平城:ヒラジロ 京:キョウ は:ハ 奈良:ナラ 時代:ジダイ	-13.2098
+
+# Try another dataset
+mkdir -p data && ./bin/telexify wikipedia.txt wikipedia.dense.xyz dense
+./bin/lmplz -o 6 --prune 3 --text news_titles.dense.xyz --arpa wikipedia.dense.arpa
+./bin/build_binary -p 1.5 probing wikipedia.dense.arpa wikipedia.dense.binary 
+./bin/query -v summary -v sentence -v word wikipedia.dense.binary <query.dense.txt
+python3 query.wikipedia.dense.py
+
+# Sent: nhieu|zf he|zj luy|j khon|z luong|wf tu|wf viec|zj lam|f gia|r thuc|wj pham|zr chuc|ws nang|w
+# Score -29.48764991760254
+# Perplexity 127.72052892470693
+# 
+# Tokens:
+# -2.851204 2: <s> nhieu|zf
+# -2.433097 3: <s> nhieu|zf he|zj
+# -2.280032 3: nhieu|zf he|zj luy|j
+# -4.085260 1: khon|z
+# -1.644028 2: khon|z luong|wf
+# -2.446214 2: luong|wf tu|wf
+# -2.369810 2: tu|wf viec|zj
+# -1.775207 3: tu|wf viec|zj lam|f
+# -2.379370 3: viec|zj lam|f gia|r
+# -2.996940 2: gia|r thuc|wj
+# -1.480528 2: thuc|wj pham|zr
+# -2.114661 3: thuc|wj pham|zr chuc|ws
+# -0.024905 4: thuc|wj pham|zr chuc|ws nang|w
+# -0.606389 5: thuc|wj pham|zr chuc|ws nang|w </s>

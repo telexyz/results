@@ -1,5 +1,14 @@
 ## Bóc tách âm tiết và trình bày dưới dạng Ascii
 
+### 26/07/2021: Add `wikipedia.txt` <= [source](https://www.kaggle.com/quynd123/vicopus-main)
+
+```sh
+cat wikipedia.txt.7z.aa wikipedia.txt.7z.ab > wikipedia.txt.7z
+7z x wikipedia.txt.7z
+```
+
+- - -
+
 Xem kết quả [`stats\08-telexified_sample.txt`](https://github.com/telexyz/results/blob/master/stats/08-telexified_sample.txt)
 
 ### Thuật ngữ
