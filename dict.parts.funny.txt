@@ -1,0 +1,64 @@
+_t _t f nh s uw y => _t uw f _t y nh s
+_t _t f nh s uw y => _t y nh f _t uw s
+_t _t f nh s uw y => _t y nh s _t uw f
+3
+từ tính
+tình tứ
+tính từ
+
+_c _d a az f o u => _c az u f _d a o
+_c _d a az f o u => _d a o _c az u f
+_c _d a az f o u => _d az u f _c a o
+3
+cầu dao
+dao cầu
+dầu cao
+
+_c _ng j u uw => _c uw _ng u j
+_c _ng j u uw => _ng u j _c uw
+_c _ng j u uw => _ng uw _c u j
+3
+cư ngụ
+ngụ cư
+ngư cụ
+
+_c _th a aw ng nh r s => _c a nh s _th aw ng r
+_c _th a aw ng nh r s => _th aw ng r _c a nh s
+_c _th a aw ng nh r s => _th aw ng s _c a nh r
+3
+cánh thẳng
+thẳng cánh
+thắng cảnh
+
+_ch _ch e f ng o oz s => _ch e o f _ch oz ng s
+_ch _ch e f ng o oz s => _ch oz ng f _ch e o s
+_ch _ch e f ng o oz s => _ch oz ng s _ch e o f
+3
+chèo chống
+chồng chéo
+chống chèo
+
+_ch _t f ng nh u y => _ch u ng _t y nh f
+_ch _t f ng nh u y => _t u ng f _ch y nh
+_ch _t f ng nh u y => _t y nh f _ch u ng
+3
+chung tình
+tùng chinh
+tình chung
+
+_dd _dd az f n ow x => _dd az n x _dd ow f
+_dd _dd az f n ow x => _dd ow f _dd az n x
+_dd _dd az f n ow x => _dd ow x _dd az n f
+3
+đẫn đờ
+đờ đẫn
+đỡ đần
+
+_h _t a n o oz r => _h a o _t oz n r
+_h _t a n o oz r => _t a o r _h oz n
+_h _t a n o oz r => _t oz n r _h a o
+3
+hao tổn
+tảo hôn
+tổn hao
+
