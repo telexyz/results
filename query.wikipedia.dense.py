@@ -2,7 +2,7 @@
 import os
 import kenlm
 
-model = kenlm.LanguageModel('wikipedia.dense.bin')
+model = kenlm.LanguageModel('wikipedia.dense.binary')
 print('\n{0}-gram model'.format(model.order))
 
 sentence = 'nhieu|zf he|zj luy|j khon|z luong|wf tu|wf viec|zj lam|f gia|r thuc|wj pham|zr chuc|ws nang|w'
