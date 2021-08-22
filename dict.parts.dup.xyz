@@ -75,8 +75,8 @@ _b _c _dd _m aw f i m n o r s y yez => _m o f _c y m _dd aw i s _b yez n r
 _b _c _h _v a f j n nh oz s t y yez => _b a t j _v yez s _c y nh _h oz n f
 _b _c _h _v a f j n nh oz s t y yez => _c y nh _h oz n f _b a t j _v yez s
 2
-_b _c _l _x a a o r s ue => _b a _c ue _x o r _l a s
-_b _c _l _x a a o r s ue => _x o r _l a s _b a _c ue
+_b _c _l _x a a o oe r s => _b a _c oe _x o r _l a s
+_b _c _l _x a a o oe r s => _x o r _l a s _b a _c oe
 2
 _b _c _m _n a aw c e f j nh s s t u uow => _c a nh s _b e u f _m aw t j _n uow c s
 _b _c _m _n a aw c e f j nh s s t u uow => _m aw t j _n uow c s _c a nh s _b e u f
@@ -423,8 +423,8 @@ _c _c ng oz r s uw => _c uw ng s _c oz r
 _c _c nh oz r s y => _c oz r _c y nh s
 _c _c nh oz r s y => _c oz s _c y nh r
 2
-_c _c s t u uaw ue => _c uaw t s _c ue u
-_c _c s t u uaw ue => _c ue u _c uaw t s
+_c _c oe s t u uaw => _c oe u _c uaw t s
+_c _c oe s t u uaw => _c uaw t s _c oe u
 2
 _c _ch _ch _l a az f j m ng oz s u y => _c a s _ch az u j _ch y m _l oz ng f
 _c _ch _ch _l a az f j m ng oz s u y => _ch y m _l oz ng f _c a s _ch az u j
@@ -852,8 +852,8 @@ _c _th az f f n n uyez => _th az n f _c uyez n f
 _c _th az f n ng oz => _c oz ng _th az n f
 _c _th az f n ng oz => _th az n f _c oz ng
 2
-_c _th az n n ue => _c ue n _th az n
-_c _th az n n ue => _th az n _c ue n
+_c _th az n n oe => _c oe n _th az n
+_c _th az n n oe => _th az n _c oe n
 2
 _c _th c ez j s uoz => _c uoz c j _th ez s
 _c _th c ez j s uoz => _th ez s _c uoz c j
@@ -861,8 +861,8 @@ _c _th c ez j s uoz => _th ez s _c uoz c j
 _c _th ez f s uow => _c ez s _th uow f
 _c _th ez f s uow => _th uow f _c ez s
 2
-_c _th i n o s ue => _c ue n _th o i s
-_c _th i n o s ue => _th o i s _c ue n
+_c _th i n o oe s => _c oe n _th o i s
+_c _th i n o oe s => _th o i s _c oe n
 2
 _c _th n oa s uez => _c oa n _th uez s
 _c _th n oa s uez => _th uez s _c oa n
