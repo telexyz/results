@@ -1,15 +1,19 @@
 ## Bóc tách âm tiết và trình bày dưới dạng Ascii
 
-### 26/07/2021: Add `wikipedia.txt` <= [source](https://www.kaggle.com/quynd123/vicopus-main)
+Xem ví dụ tại [`stats\08-telexified_sample.txt`](https://github.com/telexyz/results/blob/master/stats/08-telexified_sample.txt)
 
-```sh
-cat wikipedia.txt.7z.aa wikipedia.txt.7z.ab > wikipedia.txt.7z
-7z x wikipedia.txt.7z
+Thử nghiệm với gần 1Gb text trộn từ facebook comments, news titles, viet opensub, wikipedia, sách, truyện .. Trong vòng 45 giây phân tách được: 
+```r
+ 73% tokens âm tiết tiếng Việt  148_280_481  "của và có không là được cho các"
+  6% tokens thuộc bảng chữ cái   11_953_258  "đ đc NĐ ĐH TP USD inbox shop"
+ 21% tokens ngoài bảng chữ cái   43_576_527  ". , - : ? ; '' " 1 ! 2 / ... 2020 🤣 19000019"
+(18% ngoài bảng chữ cái 1 ký tự  37_108_988) ". , - : ? ;"
+- - - - - - - - - - - - - - - - - - - - - -
+100% tổng tokens                203_810_266
 ```
+=> TRUNG BÌNH MỘT GIÂY PHÂN TÁCH VÀ PHÂN LOẠI 5 TRIỆU TOKENS, ĐỊNH DANH 3.65 TRIỆU ÂM TIẾT TV
+Trên máy macbook 2015, 8Gb ram, 1.1Ghz Duo-core Intel M
 
-- - -
-
-Xem kết quả [`stats\08-telexified_sample.txt`](https://github.com/telexyz/results/blob/master/stats/08-telexified_sample.txt)
 
 ### Thuật ngữ
 
